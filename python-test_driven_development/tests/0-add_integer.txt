@@ -44,3 +44,12 @@ Test with NaN:
     Traceback (most recent call last):
     ...
     ValueError: cannot convert float NaN to integer
+Test with one argument (default b):
+    >>> add_integer(2)
+    100
+
+Test with no arguments:
+    >>> add_integer()
+    Traceback (most recent call last):
+    ...
+    TypeError: add_integer() missing 1 required positional argument: 'a'
