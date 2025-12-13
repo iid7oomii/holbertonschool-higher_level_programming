@@ -8,8 +8,7 @@ This module strictly enforces type and value checks on the size attribute.
 class Square:
     """
     The Square class represents a geometrical square figure.
-
-    It is initialized with an optional size parameter, which must be a 
+    It is initialized with an optional size parameter, which must be a
     non-negative integer, and stores it as a private instance attribute.
     """
 
@@ -28,9 +27,9 @@ class Square:
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
-        
+
         if size < 0:
             raise ValueError("size must be >= 0")
-        
+
         # Private instance attribute storage
         self.__size = size
