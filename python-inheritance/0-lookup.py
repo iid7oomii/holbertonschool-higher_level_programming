@@ -9,4 +9,4 @@ obj (object): the object to list.
 Returns:
   list: the list of attributes.
   '''
-return dir(obj)
+  return dir(obj)
