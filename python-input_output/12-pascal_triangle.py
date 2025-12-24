@@ -1,10 +1,14 @@
 #!/usr/bin/python3
+"""
+12-pascal_triangle
+"""
+
+
 def pascal_triangle(n):
     """
     Defines a function that returns a list of integers
     representing the Pascal`s triangle of n
     """
-
     if n <= 0:
         return []
 
@@ -15,12 +19,10 @@ def pascal_triangle(n):
         current_row = [1]
 
         for j in range(len(prev_row) - 1):
-
             new_number = prev_row[j] + prev_row[j + 1]
             current_row.append(new_number)
 
         current_row.append(1)
-
         triangle.append(current_row)
 
     return triangle
