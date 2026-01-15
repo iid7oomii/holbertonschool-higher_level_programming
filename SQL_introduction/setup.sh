@@ -6,6 +6,8 @@ pip install pycodestyle
 
 echo "Installing tmux..."
 sudo apt install tmux -y
+apt update
+apt install -y mysql-server
 
 # 2. إعدادات Git (بياناتك الشخصية)
 echo "Configuring Git..."
